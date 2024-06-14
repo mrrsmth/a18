@@ -22,7 +22,7 @@ export class SecondChildComponent {
   }
 
   valNum() {
-    this.data.numSub.subscribe(num => {
+    this.data.numSub$.subscribe(num => {
       this.numSub = num;
       console.log(num);
     })

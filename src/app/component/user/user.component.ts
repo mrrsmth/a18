@@ -23,7 +23,7 @@ export class UserComponent {
   }
 
   subUser() {
-    this.data.userSub.subscribe(user => {
+    this.data.userSub$.subscribe(user => {
       this.startUser = user;
     })
   }

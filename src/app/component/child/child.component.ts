@@ -17,9 +17,8 @@ export class ChildComponent {
   constructor(private data: DataService) {}
 
   ngOnInit() {
-    this.data.stringSubject.subscribe(
-      data => 
-      {
+    this.data.stringSubject$.subscribe(
+      data => {
         console.log('next subscribed value: ' + data);
         this.myName = data;
       }

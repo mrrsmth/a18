@@ -7,21 +7,22 @@ import { User } from '../interface/user';
 })
 
 export class DataService {
-  stringSubject = new Subject<string>();
-  numSub = new Subject<number>();
-  userSub = new Subject<User>();
+  stringSubject$ = new Subject<string>();
+  numSub$ = new Subject<number>();
+  userSub$ = new Subject<User>();
 
   constructor() {}
 
   passValue(data: string) {
-    this.stringSubject.next(data);
+    this.stringSubject$.next(data);
   }
 
   passNum(num: number) {
-    this.numSub.next(num);
+    this.numSub$.next(num);
   }
 
   passUser(user: User) {
-    this.userSub.next(user);
+    this.userSub$.next(user);
   }
 }
+

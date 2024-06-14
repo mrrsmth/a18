@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ChildComponent } from '../child/child.component';
 import { DataService } from '../../service/data.service';
-import { FormsModule, NgModel } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { SecondChildComponent } from '../second-child/second-child.component';
 import { UserComponent } from '../user/user.component';
 import { User } from '../../interface/user';
