@@ -1,0 +1,21 @@
+<app-child 
+    [string]="appParent" 
+    (onChange)="hiString($event)">
+</app-child>
+
+<input type="text" [(ngModel)]="myTextVal">
+
+<div>
+    <button (click)="sendTextValue()">Click Me</button>
+    <button (click)="cleanTextValue()">Clean</button>
+</div>
+
+
+<div>
+    <app-second-child></app-second-child>
+</div>
+
+<div>
+    <app-user></app-user>
+    <button (click)="getUser()">User</button>
+</div>
