@@ -26,6 +26,9 @@ export class ParentComponent {
 
   constructor(private data: DataService) {}
 
+  ngOnInit() {
+    this.data.getJson().subscribe()
+  }
 
   sendTextValue(){
     this.data.passValue(this.myTextVal);
